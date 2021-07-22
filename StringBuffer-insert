@@ -1,0 +1,39 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        Scanner in =new Scanner(System.in);
+        System.out.print("Enter the string: ");
+        String string =in.nextLine();
+        StringBuffer stringBuffer=new StringBuffer(string);
+        System.out.print("Enter the index of the character to insert: ");
+        int index=in.nextInt();
+        System.out.print("Enter the string to be inserted: ");
+        char string1=in.next().charAt(0);
+        stringBuffer.insert(index,string1);
+        System.out.println("The string after insertion "+stringBuffer);
+
+
+
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
